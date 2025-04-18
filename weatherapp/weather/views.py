@@ -1,6 +1,11 @@
 import requests
 from django.shortcuts import render
 
+import os
+
+
+
+
 def index(request):
     if request.method == "POST":
         city = request.POST.get("city")
@@ -9,7 +14,7 @@ def index(request):
         
     url = "https://api.openweathermap.org/data/2.5/weather"
     
-    api_key = "f96630d5679a8a918ffed32c47e947b0"
+    api_key = os.getenv("OPENWEATHER_API_KEY")
     
     PARAMS = {
         "q": city,
