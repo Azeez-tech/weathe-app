@@ -1,0 +1,49 @@
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+*.eggs/
+
+# Django-specific
+*.log
+*.pot
+*.pyc
+*.sqlite3
+*.db
+*.db-journal
+
+# Environment variables
+.env
+.env.*
+
+# Django migrations
+*/migrations/*
+
+# Static and media files
+/static/
+/media/
+
+# Virtual environment
+venv/
+env/
+.venv/
+.virtualenv/
+env.bak/
+venv.bak/
+
+# IDE/editor directories
+.idea/
+.vscode/
+
+# macOS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
