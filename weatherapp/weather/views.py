@@ -35,6 +35,6 @@ def index(request):
             "name": data["name"]
         }
     else:
-        data = None
+        weather_data = None
     
     return render(request, "index.html", { "datas": weather_data, "city": city, })
